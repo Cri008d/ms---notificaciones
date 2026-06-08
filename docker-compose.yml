@@ -1,0 +1,8 @@
+ms-notificaciones:
+    build:
+      context: ./ms-notificaciones
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    networks:
+      - valle_seguro_net # usar el mismo nombre de red que tienen los otros
